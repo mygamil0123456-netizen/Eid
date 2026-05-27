@@ -1,0 +1,6 @@
+{
+  "name": "Eid-ul-Adha Celebration",
+  "description": "A beautiful and interactive Eid-ul-Adha celebration website with warm greetings, animations, and funny lines.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

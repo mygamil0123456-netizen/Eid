@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Hind Siliguri", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", "Hind Siliguri", serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px rgba(253, 224, 71, 0.4), 0 0 20px rgba(253, 224, 71, 0.2);
+  }
+  .box-glow {
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+  }
+}
+
+@keyframes floatCow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(3deg);
+  }
+}
+
+.animate-float-cow {
+  animation: floatCow 4s ease-in-out infinite;
+}
+
