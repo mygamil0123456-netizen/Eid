@@ -7,6 +7,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Sparkles, Moon, Volume2, VolumeX, Heart, Info, Info as InfoIcon, Share } from 'lucide-react';
 import AnimalPasture from './components/AnimalPasture';
+import AnimalSoundButton from './components/AnimalSoundButton';
 import HumorWheel from './components/HumorWheel';
 import CardGenerator from './components/CardGenerator';
 
@@ -329,6 +330,15 @@ export default function App() {
           transition={{ duration: 0.6 }}
         >
           <AnimalPasture />
+        </motion.div>
+
+        {/* SECTION 1.5: Dedicated Animal Audio Loops Controller */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.08 }}
+        >
+          <AnimalSoundButton />
         </motion.div>
 
         {/* SECTION 2: Curated Comedy Panel */}
